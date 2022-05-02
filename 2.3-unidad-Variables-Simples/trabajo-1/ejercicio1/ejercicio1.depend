@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1649373350 source:d:\facultad\materias\programacion-lab-1\unidad-1\trabajo-1\1-pilas\ejercicio1\pila.c
+	"pila.h"
+
+1490112217 d:\facultad\materias\programacion-lab-1\unidad-1\trabajo-1\1-pilas\ejercicio1\pila.h
+	<stdio.h>
+	<malloc.h>
+

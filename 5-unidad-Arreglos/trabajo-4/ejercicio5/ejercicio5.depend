@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1651429313 source:d:\facultad\materias\programacion-lab-1\5-unidad-arreglos\trabajo-4\ejercicio5\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

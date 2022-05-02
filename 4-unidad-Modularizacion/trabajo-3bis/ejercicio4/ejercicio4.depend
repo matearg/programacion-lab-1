@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1651001012 source:d:\facultad\materias\programacion-lab-1\4-unidad-modularizacion\trabajo-3bis\ejercicio4\main.c
+	<stdio.h>
+	<stdlib.h>
+

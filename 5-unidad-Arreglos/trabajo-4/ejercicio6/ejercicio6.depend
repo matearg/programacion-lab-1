@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1651433682 source:d:\facultad\materias\programacion-lab-1\5-unidad-arreglos\trabajo-4\ejercicio6\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+

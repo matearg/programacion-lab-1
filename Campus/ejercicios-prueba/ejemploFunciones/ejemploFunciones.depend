@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1649370553 source:c:\users\mateo\desktop\ejemplofunciones\main.c
+	<stdio.h>
+	<stdlib.h>
+
+1649370738 source:d:\facultad\materias\programacion-lab-1\unidad-1\ejercicios-prueba\ejemplofunciones\main.c
+	<stdio.h>
+	<stdlib.h>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1651529213 source:d:\facultad\materias\programacion-lab-1\campus\ejercicios-prueba\buscarmenorarray\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+
