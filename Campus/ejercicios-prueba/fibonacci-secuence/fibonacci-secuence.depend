@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1651788152 source:d:\facultad\materias\programacion-lab-1\campus\ejercicios-prueba\fibonacci-secuence\main.c
+	<stdio.h>
+	<stdlib.h>
+
