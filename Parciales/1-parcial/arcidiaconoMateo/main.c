@@ -21,53 +21,45 @@ void promArregloPorcPila(int a[], int validos, Pila p); // 4c
 // Funcion llamadora
 int main() // 5
 {
-    int cantRepeticiones, modoSeguro, usrOrRandom, condicion;
+    int cantRepeticiones, modoSeguro, usrOrRandom;
     int validos = 0;
     int arregloB[100];
     Pila coinsPorDia, pilaA;
     inicpila(&coinsPorDia);
     inicpila(&pilaA);
 
-    do
+    system("cls");
+
+    printf("Cuantas veces desea minar ");
+    scanf("%d", &cantRepeticiones);
+
+    printf("\nDesea ingresar los valores por consola (0) o generarlos de manera aleatoria (1) ");
+    scanf("%d", &usrOrRandom);
+
+    printf("\nDesea utilizar el modo seguro 1 = on / 0 = off ");
+    scanf("%d", &modoSeguro);
+
+    system("cls");
+
+    if(usrOrRandom == 0)
     {
-        system("cls");
-
-        printf("Cuantas veces desea minar ");
-        scanf("%d", &cantRepeticiones);
-
-        printf("\nDesea ingresar los valores por consola (0) o generarlos de manera aleatoria (1) ");
-        scanf("%d", &usrOrRandom);
-
-        printf("\nDesea utilizar el modo seguro 1 = on / 0 = off ");
-        scanf("%d", &modoSeguro);
-
-        system("cls");
-
-        if(usrOrRandom == 0)
-        {
-            placaVideoUsr(modoSeguro, cantRepeticiones, &coinsPorDia);
-        }
-        else
-        {
-            placaVideoRandom(modoSeguro, cantRepeticiones, &coinsPorDia);
-        }
-
-        printf("Coins generadas por ciclo en un dia");
-        mostrar(&coinsPorDia);
-
-        validos = ordenarValoresCoins(coinsPorDia, arregloB, &pilaA);
-
-        maxMinTotal(arregloB, pilaA, validos, coinsPorDia);
-
-        promArregloPorcPila(arregloB, validos, pilaA);
-
-        printf("Presione una tecla, ESC para salir... ");
-        fflush(stdin);
-        condicion = getch();
-
+        placaVideoUsr(modoSeguro, cantRepeticiones, &coinsPorDia);
     }
-    while(condicion != 27);
+    else
+    {
+        placaVideoRandom(modoSeguro, cantRepeticiones, &coinsPorDia);
+    }
 
+    printf("Coins generadas por ciclo en un dia");
+    mostrar(&coinsPorDia);
+
+    validos = ordenarValoresCoins(coinsPorDia, arregloB, &pilaA);
+
+    maxMinTotal(arregloB, pilaA, validos, coinsPorDia);
+
+    promArregloPorcPila(arregloB, validos, pilaA);
+
+    system("PAUSE");
     system("cls");
 
     return 0;
