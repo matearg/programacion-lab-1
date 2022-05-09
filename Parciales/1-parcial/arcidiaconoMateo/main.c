@@ -1,9 +1,11 @@
+// Librerias incluidas en el proyecto
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 #include <conio.h>
 #include "pila.h"
 
+// Prototipado de las funciones
 void placaVideoUsr(int mSeguro, int cantReps, Pila * p); // 1
 void placaVideoRandom(int mSeguro, int cantReps, Pila * p); // 1
 int ordenarValoresCoins(Pila origen, int a[], Pila * destino); // 2a y 2b
@@ -16,6 +18,7 @@ float promCoinsArreglo(int a[], int validos); // 4a
 float porcNegPila(Pila p); // 4b
 void promArregloPorcPila(int a[], int validos, Pila p); // 4c
 
+// Funcion llamadora
 int main() // 5
 {
     int cantRepeticiones, modoSeguro, usrOrRandom, condicion;
@@ -25,51 +28,52 @@ int main() // 5
     inicpila(&coinsPorDia);
     inicpila(&pilaA);
 
-    system("cls");
-
-    printf("Cuantas veces desea minar ");
-    scanf("%d", &cantRepeticiones);
-
-    printf("\nDesea ingresar los valores por consola (0) o generarlos de manera aleatoria (1) ");
-    scanf("%d", &usrOrRandom);
-
-    printf("\nDesea utilizar el modo seguro 1 = on / 0 = off ");
-    scanf("%d", &modoSeguro);
-
-    system("cls");
-
-    if(usrOrRandom == 0)
+    do
     {
-        placaVideoUsr(modoSeguro, cantRepeticiones, &coinsPorDia);
+        system("cls");
+
+        printf("Cuantas veces desea minar ");
+        scanf("%d", &cantRepeticiones);
+
+        printf("\nDesea ingresar los valores por consola (0) o generarlos de manera aleatoria (1) ");
+        scanf("%d", &usrOrRandom);
+
+        printf("\nDesea utilizar el modo seguro 1 = on / 0 = off ");
+        scanf("%d", &modoSeguro);
+
+        system("cls");
+
+        if(usrOrRandom == 0)
+        {
+            placaVideoUsr(modoSeguro, cantRepeticiones, &coinsPorDia);
+        }
+        else
+        {
+            placaVideoRandom(modoSeguro, cantRepeticiones, &coinsPorDia);
+        }
+
+        printf("Coins generadas por ciclo en un dia");
+        mostrar(&coinsPorDia);
+
+        validos = ordenarValoresCoins(coinsPorDia, arregloB, &pilaA);
+
+        maxMinTotal(arregloB, pilaA, validos, coinsPorDia);
+
+        promArregloPorcPila(arregloB, validos, pilaA);
+
+        printf("Presione una tecla, ESC para salir... ");
+        fflush(stdin);
+        condicion = getch();
+
     }
-    else
-    {
-        placaVideoRandom(modoSeguro, cantRepeticiones, &coinsPorDia);
-    }
-
-    printf("Coins generadas por ciclo en un dia");
-    mostrar(&coinsPorDia);
-
-    validos = ordenarValoresCoins(coinsPorDia, arregloB, &pilaA);
-
-    maxMinTotal(arregloB, pilaA, validos, coinsPorDia);
-
-    promArregloPorcPila(arregloB, validos, pilaA);
-
-    printf("Presione una tecla, ESC para salir... ");
-    fflush(stdin);
-    condicion = getch();
-
-    while(condicion != 27)
-    {
-        main();
-    }
+    while(condicion != 27);
 
     system("cls");
 
     return 0;
 }
 
+// Permite al usuario agregar las coins y los carga a una pila
 void placaVideoUsr(int mSeguro, int cantReps, Pila * p)
 {
     int i = 0, valorCoin;
@@ -100,6 +104,7 @@ void placaVideoUsr(int mSeguro, int cantReps, Pila * p)
     }
 }
 
+// Crea los valores de las coins de forma aleatoria y los carga a una pila
 void placaVideoRandom(int mSeguro, int cantReps, Pila * p)
 {
     srand(time(NULL));
@@ -119,6 +124,7 @@ void placaVideoRandom(int mSeguro, int cantReps, Pila * p)
     }
 }
 
+// Ordena la pila en la cual estan ubicados los coins de < a >
 int ordenarValoresCoins(Pila origen, int a[], Pila * destino)
 {
     int i = 0;
@@ -144,6 +150,7 @@ int ordenarValoresCoins(Pila origen, int a[], Pila * destino)
     return i;
 }
 
+// Funcion que muestra los valores de un array separados por "|"
 void mostrarArreglo(int a[], int validos)
 {
     int i = 0;
@@ -154,6 +161,7 @@ void mostrarArreglo(int a[], int validos)
     }
 }
 
+// Busca el maximo valor en un array y lo muestra por pantalla
 int buscarMaximoArreglo(int a[], int validos)
 {
     int i = 0, mayor = 0;
@@ -171,6 +179,7 @@ int buscarMaximoArreglo(int a[], int validos)
     return mayor;
 }
 
+// Busca el menor valor en una pila y lo muestra por pantalla
 int buscarMenorPila(Pila p)
 {
     Pila aux, menor;
@@ -202,6 +211,7 @@ int buscarMenorPila(Pila p)
     return tope(&menor);
 }
 
+// Muestra por pantalla una sumatoria de los valores de la pila
 int gananciaTotal(Pila p)
 {
     int suma = 0;
@@ -217,6 +227,7 @@ int gananciaTotal(Pila p)
     return suma;
 }
 
+// Llama a las funciones "mayorArreglo()", "menorPila()" y "gananciaTotal()"
 void maxMinTotal(int a[], Pila p, int validos, Pila original)
 {
     int mayorArreglo = 0, menorPila = 0, total = 0;
@@ -242,6 +253,7 @@ void maxMinTotal(int a[], Pila p, int validos, Pila original)
     printf("\nLa ganancia total del dia es %d\n", total);
 }
 
+// Muestra en pantalla el promedio de coins de un arreglo
 float promCoinsArreglo(int a[], int validos)
 {
     int i = 0, suma = 0;
@@ -257,6 +269,8 @@ float promCoinsArreglo(int a[], int validos)
     return promedio;
 }
 
+
+// Muestra por pantalla el porcentaje de valores negativos de una pila
 float porcNegPila(Pila p)
 {
     int i = 0, j = 0;
@@ -286,6 +300,7 @@ float porcNegPila(Pila p)
     return porcentage;
 }
 
+// Llama a las funciones "promCoinsArreglo()" y "porcNegPila()"
 void promArregloPorcPila(int a[], int validos, Pila p)
 {
     float promedioCoins = 0, porcNegativos = 0;
