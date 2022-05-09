@@ -18,7 +18,7 @@ void promArregloPorcPila(int a[], int validos, Pila p); // 4c
 
 int main() // 5
 {
-    int cantRepeticiones, modoSeguro, usrOrRandom;
+    int cantRepeticiones, modoSeguro, usrOrRandom, condicion;
     int validos = 0;
     int arregloB[100];
     Pila coinsPorDia, pilaA;
@@ -56,7 +56,15 @@ int main() // 5
 
     promArregloPorcPila(arregloB, validos, pilaA);
 
-    system("PAUSE");
+    printf("Presione una tecla, ESC para salir... ");
+    fflush(stdin);
+    condicion = getch();
+
+    while(condicion != 27)
+    {
+        main();
+    }
+
     system("cls");
 
     return 0;

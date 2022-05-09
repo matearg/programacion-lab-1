@@ -13,3 +13,17 @@
 1490112217 source:c:\users\mateo\desktop\arcidiaconomateo\pila.c
 	"pila.h"
 
+1490112217 source:d:\facultad\materias\programacion-lab-1\parciales\1-parcial\arcidiaconomateo\pila.c
+	"pila.h"
+
+1490112217 d:\facultad\materias\programacion-lab-1\parciales\1-parcial\arcidiaconomateo\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1652115776 source:d:\facultad\materias\programacion-lab-1\parciales\1-parcial\arcidiaconomateo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<conio.h>
+	"pila.h"
+
