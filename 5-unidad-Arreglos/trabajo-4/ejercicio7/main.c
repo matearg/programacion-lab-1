@@ -58,7 +58,7 @@ void mostrarArrelgo(char a[], int validos)
 {
     int i = 0;
 
-    for(i=0;i<validos;i++)
+    for(i=0; i<validos; i++)
     {
         printf("| %c ", a[i]);
     }
@@ -71,15 +71,16 @@ void ordenarArrelgo(char a[], int validos)
 
     for (i = 1; i < validos; i++)
     {
-		menor = a[i];
+        menor = a[i];
 
-		j = i-1;
+        j = i-1;
 
-		while (j >= 0 && a[j] > menor){
+        while (j >= 0 && a[j] > menor)
+        {
             a[j+1] = a[j];
 
-			j--;
-		}
-		a[j+1] = menor;
+            j--;
+        }
+        a[j+1] = menor;
     }
 }
