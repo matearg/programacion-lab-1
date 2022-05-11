@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define CANT_E 100
+#define CANT_E 20
 
 // Realizar una función que inserte un carácter en un
 // arreglo ordenado alfabéticamente,
@@ -18,7 +18,12 @@ int main()
 
     validos = cargarArreglo(arreglo);
 
-    printf("\nArrelgo luego de carga\n\n");
+    printf("\nArrelgo luego de carga\n");
+    mostrarArrelgo(arreglo, validos);
+
+    ordenarArrelgo(arreglo, validos);
+
+    printf("\n\nArrelgo luego de carga\n");
     mostrarArrelgo(arreglo, validos);
 
     printf("\n\n");
@@ -61,4 +66,20 @@ void mostrarArrelgo(char a[], int validos)
 
 void ordenarArrelgo(char a[], int validos)
 {
+    int i = 0, j = 0;
+    char menor = 0;
+
+    for (i = 1; i < validos; i++)
+    {
+		menor = a[i];
+
+		j = i-1;
+
+		while (j >= 0 && a[j] > menor){
+			*(a+j+1) = a[j];
+
+			j--;
+		}
+		*(a+j+1) = menor;
+    }
 }
