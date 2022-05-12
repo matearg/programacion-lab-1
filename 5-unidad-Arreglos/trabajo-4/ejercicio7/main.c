@@ -9,20 +9,22 @@
 
 int cargarArreglo(char a[]);
 void mostrarArrelgo(char a[], int validos);
-void insertarElemento(char a[], char elementoInsertado);
+void insertarElemento(char a[], char elementoInsertado, int validos);
 
 int main()
 {
     int validos = 0;
-    char arreglo[CANT_E], elementoAInsertar;
+    char arreglo[] = {'a', 'c', 'd', 'e'}, elementoAInsertar = 'b';
 
-    validos = cargarArreglo(arreglo);
+    //validos = cargarArreglo(arreglo);
+    validos = 5;
 
     printf("\nArrelgo luego de carga\n");
     mostrarArrelgo(arreglo, validos);
 
-    printf("Inserte un elemento al arreglo ");
-    scanf("%c", &elementoAInsertar);
+    insertarElemento(arreglo, elementoAInsertar, validos);
+    printf("\n\nArrelgo luego de insertar\n");
+    mostrarArrelgo(arreglo, validos);
 
     printf("\n\n");
     system("PAUSE");
@@ -61,3 +63,6 @@ void mostrarArrelgo(char a[], int validos)
         printf("| %c ", a[i]);
     }
 }
+
+void insertarElemento(char a[], char elementoInsertado, int validos)
+{}

@@ -9,7 +9,7 @@
 
 int cargarArreglo(int a[]);
 void mostrarArrelgo(int a[], int validos);
-void ordenarArrelgo(int a[], int validos);
+void ordenarArrelgoInsercion(int a[], int validos);
 
 int main()
 {
@@ -20,7 +20,7 @@ int main()
     printf("\nArreglo luego de carga\n");
     mostrarArrelgo(arreglo, validos);
 
-    ordenarArrelgo(arreglo, validos);
+    ordenarArrelgoInsercion(arreglo, validos);
     printf("\n\nArreglo ordenado por insercion\n");
     mostrarArrelgo(arreglo, validos);
 
@@ -57,10 +57,10 @@ void mostrarArrelgo(int a[], int validos)
     }
 }
 
-void ordenarArrelgo(int a[], int validos)
+void ordenarArrelgoInsercion(int a[], int validos)
 {
     int i = 0, j = 0;
-    char menor = 0;
+    int menor = 0;
 
     for (i = 1; i < validos; i++)
     {
