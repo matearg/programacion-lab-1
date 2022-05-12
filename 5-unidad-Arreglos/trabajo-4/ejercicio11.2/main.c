@@ -8,7 +8,7 @@
 #define CANT_E 20
 
 int cargarArreglo(int a[]);
-void mostrarArrelgo(int a[], int validos);
+void mostrarArreglo(int a[], int validos);
 void ordenarArrelgoInsercion(int a[], int validos);
 
 int main()
@@ -18,11 +18,11 @@ int main()
     validos = cargarArreglo(arreglo);
 
     printf("\nArreglo luego de carga\n");
-    mostrarArrelgo(arreglo, validos);
+    mostrarArreglo(arreglo, validos);
 
     ordenarArrelgoInsercion(arreglo, validos);
     printf("\n\nArreglo ordenado por insercion\n");
-    mostrarArrelgo(arreglo, validos);
+    mostrarArreglo(arreglo, validos);
 
     printf("\n\n");
     system("PAUSE");
@@ -47,7 +47,7 @@ int cargarArreglo(int a[])
     return validos;
 }
 
-void mostrarArrelgo(int a[], int validos)
+void mostrarArreglo(int a[], int validos)
 {
     int i = 0;
 
