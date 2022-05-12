@@ -59,21 +59,21 @@ void mostrarArrelgo(int a[], int validos)
 
 void ordenarArrelgoInsercion(int a[], int validos)
 {
-    int i = 0, j = 0;
-    int menor = 0;
+    int i = 0, j = 0, menor = 0;
 
     for (i = 1; i < validos; i++)
     {
         menor = a[i];
 
-        j = i-1;
+        j = i;
 
-        while (j >= 0 && a[j] > menor)
+        while (j > 0 && a[j - 1] > menor)
         {
-            a[j+1] = a[j];
+            a[j] = a[j - 1];
 
             j--;
         }
-        a[j+1] = menor;
+
+        a[j] = menor;
     }
 }
