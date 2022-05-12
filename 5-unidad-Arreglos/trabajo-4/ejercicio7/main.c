@@ -9,23 +9,20 @@
 
 int cargarArreglo(char a[]);
 void mostrarArrelgo(char a[], int validos);
-void ordenarArrelgo(char a[], int validos);
-void ordenarArrelgoDos(char a[], int validos);
+void insertarElemento(char a[], char elementoInsertado);
 
 int main()
 {
     int validos = 0;
-    char arreglo[CANT_E];
+    char arreglo[CANT_E], elementoAInsertar;
 
     validos = cargarArreglo(arreglo);
 
     printf("\nArrelgo luego de carga\n");
     mostrarArrelgo(arreglo, validos);
 
-    ordenarArrelgoDos(arreglo, validos);
-
-    printf("\n\nArrelgo luego de carga\n");
-    mostrarArrelgo(arreglo, validos);
+    printf("Inserte un elemento al arreglo ");
+    scanf("%c", &elementoAInsertar);
 
     printf("\n\n");
     system("PAUSE");
@@ -62,35 +59,5 @@ void mostrarArrelgo(char a[], int validos)
     for(i=0; i<validos; i++)
     {
         printf("| %c ", a[i]);
-    }
-}
-
-void ordenarArrelgo(char a[], int validos)
-{
-    int i = 0, j = 0;
-    char menor = 0;
-
-    for (i = 1; i < validos; i++)
-    {
-        menor = a[i];
-
-        j = i-1;
-
-        while (j >= 0 && a[j] > menor)
-        {
-            a[j+1] = a[j];
-
-            j--;
-        }
-        a[j+1] = menor;
-    }
-}
-
-void ordenarArrelgoDos(char a[], int validos)
-{
-    int i = 0, menor = 0;
-
-    while (validos >= 0)
-    {
     }
 }
