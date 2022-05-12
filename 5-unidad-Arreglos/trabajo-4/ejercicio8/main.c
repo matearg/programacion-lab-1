@@ -57,7 +57,7 @@ void mostrarArray(int a[], int validos)
 
 int buscarMayorArray(int a[], int validos)
 {
-    int i = 0, mayor = 0;
+    int i = 0, mayor;
 
     mayor = a[i];
 

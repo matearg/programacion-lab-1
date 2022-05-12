@@ -2,9 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define CANT_E 20
 // Ordenar un arreglo según los siguientes métodos:
 // Seleccion
+
+#define CANT_E 20
 
 int cargarArray(int a[]);
 void mostratArray(int a[], int validos);
@@ -64,6 +65,7 @@ void ordenarArraySeleccion(int a[], int validos)
     for(i = 0; i < validos; i++)
     {
         menor = i;
+
         for(j = i+1; j < validos; j++)
         {
             if(a[j] < a[menor])
@@ -71,8 +73,11 @@ void ordenarArraySeleccion(int a[], int validos)
                 menor = j;
             }
         }
+
         aux = a[i];
+
         a[i] = a[menor];
+
         a[menor] = aux;
     }
 }

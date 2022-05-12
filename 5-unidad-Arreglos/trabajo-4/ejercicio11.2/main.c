@@ -59,7 +59,7 @@ void mostrarArrelgo(int a[], int validos)
 
 void ordenarArrelgoInsercion(int a[], int validos)
 {
-    int i = 0, j = 0, menor = 0;
+    int i, j, menor;
 
     for (i = 1; i < validos; i++)
     {
