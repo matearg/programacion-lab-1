@@ -10,6 +10,7 @@
 int cargarArreglo(char a[]);
 void mostrarArrelgo(char a[], int validos);
 void ordenarArrelgo(char a[], int validos);
+void ordenarArrelgoDos(char a[], int validos);
 
 int main()
 {
@@ -21,7 +22,7 @@ int main()
     printf("\nArrelgo luego de carga\n");
     mostrarArrelgo(arreglo, validos);
 
-    ordenarArrelgo(arreglo, validos);
+    ordenarArrelgoDos(arreglo, validos);
 
     printf("\n\nArrelgo luego de carga\n");
     mostrarArrelgo(arreglo, validos);
@@ -82,5 +83,14 @@ void ordenarArrelgo(char a[], int validos)
             j--;
         }
         a[j+1] = menor;
+    }
+}
+
+void ordenarArrelgoDos(char a[], int validos)
+{
+    int i = 0, menor = 0;
+
+    while (validos >= 0)
+    {
     }
 }
