@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1652568337 source:c:\users\mateo\.github\programacion-lab-1\5-unidad-arreglos\trabajo-4.1\ejercicio3\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
