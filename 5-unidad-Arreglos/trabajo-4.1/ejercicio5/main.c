@@ -75,7 +75,7 @@ float promedioMatriz(int filas, int columnas, int m[filas][columnas])
         }
     }
 
-    promM = (float)sumM / (y + x);
+    promM = (float)sumM / (y * x);
 
     return promM;
 }
