@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1490112217 source:d:\facultad\materias\programacion-lab-1\parciales\1-recuparcial\arcidiaconomateorecup1\pila.c
+	"pila.h"
+
+1490112217 d:\facultad\materias\programacion-lab-1\parciales\1-recuparcial\arcidiaconomateorecup1\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1653604749 source:d:\facultad\materias\programacion-lab-1\parciales\1-recuparcial\arcidiaconomateorecup1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	"pila.h"
+
