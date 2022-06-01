@@ -36,7 +36,7 @@ int cargarArreglos(int l[], char n[][30], int a[])
         l[i] = numLegajo;
         numLegajo++;
 
-        printf("\nIngrese el nombre del alumno: ");
+        printf("Ingrese el nombre del alumno: ");
         fflush(stdin);
         scanf("%s", n[i]);
 
@@ -45,6 +45,7 @@ int cargarArreglos(int l[], char n[][30], int a[])
         printf("\nDesea agregar otro alumno s/n: ");
         fflush(stdin);
         condicion = getch();
+        printf("\n");
 
         i++;
     }
@@ -61,8 +62,6 @@ void mostrarArreglos(int l[], char n[][30], int a[], int validos)
 
     for(i = 0; i < validos; i++)
     {
-        printf("\n%d\t", l[i]);
-        printf("%s\t", n[i]);
-        printf("%d", a[i]);
+        printf("\n%d\t %s\t %d\t", l[i], n[i], a[i]);
     }
 }
