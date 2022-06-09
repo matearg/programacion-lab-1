@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1654787735 source:d:\facultad\materias\programacion-lab-1\6-unidad-registros\trabajo-6\ejercicio1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
