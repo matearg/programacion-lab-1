@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1654815232 source:d:\facultad\materias\programacion-lab-1\parciales\2-parcial\arcidiaconomateo\main.c
+1654818003 source:d:\facultad\materias\programacion-lab-1\parciales\2-parcial\arcidiaconomateo\main.c
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
