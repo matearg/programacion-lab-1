@@ -1,0 +1,474 @@
+# depslib dependency file v1.0
+1656256511 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\pedidos.c
+	"pedidos.h"
+	"archivosPedidos.h"
+	"../common/mensajes.h"
+	"../common/fecha.h"
+	"../articulos/articulos.h"
+
+1656376494 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\pedidos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1655938353 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\fecha.c
+	"fecha.h"
+
+1656256188 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\fecha.h
+	<stdio.h>
+	<time.h>
+
+1656376764 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"files/articulos/articulos.h"
+	"files/common/fecha.h"
+	"files/common/mensajes.h"
+	"files/pedidos/archivosPedidos.h"
+	"files/pedidos/pedidos.h"
+	"files/clientes/cliente.h"
+	"files/clientes/archivosClientes.h"
+	"files/clientes/menuCliente.h"
+
+1656256188 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\archivospedidos.c
+	<stdio.h>
+	<stdlib.h>
+	"../common/mensajes.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656256188 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\archivospedidos.h
+	"pedidos.h"
+
+1655938353 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\articulos\articulos.c
+	"articulos.h"
+
+1656256188 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\articulos\articulos.h
+	<stdio.h>
+	<string.h>
+
+1656256188 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\mensajes.h
+
+1656376951 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\mensajes.c
+	"mensajes.h"
+
+1656281806 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\archivosclientes.c
+	<stdlib.h>
+	<stdio.h>
+	"../common/mensajes.h"
+	"archivosClientes.h"
+
+1656188585 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\archivosclientes.h
+	"cliente.h"
+
+1656256698 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\cliente.h
+
+1656378514 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\cliente.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/commonClientes.h"
+	"../common/leerTeclado.h"
+	"cliente.h"
+	"archivosClientes.h"
+
+1656377459 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\leerteclado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leerTeclado.h"
+
+1656114496 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\leerteclado.h
+
+1656378505 c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\commonclientes.h
+	"../clientes/cliente.h"
+
+1656378769 source:c:\users\mario\documents\archivos importantes\facultad\utn - mar del plata\laboratorio y programacion i\proyecto final\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\commonclientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commonClientes.h"
+
+1656615151 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\fecha.c
+	"fecha.h"
+
+1656556031 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\fecha.h
+	<stdio.h>
+	<time.h>
+
+1656615151 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\articulos\articulos.c
+	<stdio.h>
+	<stdlib.h>
+	"articulos.h"
+	"../common/mensajes.h"
+
+1656561108 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\articulos\articulos.h
+	<stdio.h>
+	<string.h>
+
+1656282996 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\mensajes.h
+
+1656556031 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\clientes\archivosclientes.c
+	<stdlib.h>
+	<stdio.h>
+	"../common/mensajes.h"
+	"archivosClientes.h"
+
+1656556031 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\clientes\archivosclientes.h
+	"cliente.h"
+
+1656615151 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\clientes\cliente.h
+
+1656615151 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\clientes\cliente.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/commonClientes.h"
+	"../common/leerTeclado.h"
+	"cliente.h"
+	"archivosClientes.h"
+
+1656615151 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\commonclientes.h
+	"../clientes/cliente.h"
+
+1656282996 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\leerteclado.h
+
+1656615151 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\commonclientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commonClientes.h"
+	"mensajes.h"
+	"leerTeclado.h"
+
+1656282996 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\leerteclado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leerTeclado.h"
+
+1656556031 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\common\mensajes.c
+	<stdio.h>
+	"mensajes.h"
+
+1656556031 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\pedidos\archivospedidos.c
+	<stdio.h>
+	<stdlib.h>
+	"../common/mensajes.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656615151 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\pedidos\pedidos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../common/fecha.h"
+
+1656556031 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\pedidos\archivospedidos.h
+	"pedidos.h"
+
+1656615151 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\pedidos\pedidos.c
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+	"../articulos/articulos.h"
+	"../clientes/cliente.h"
+	"../common/fecha.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656615151 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"files/auth/autenticacion.h"
+	"files/menu/menu.h"
+
+1656615885 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\menu\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1656615151 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\menu\menu.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"../articulos/articulos.h"
+	"../pedidos/archivosPedidos.h"
+	"../pedidos/pedidos.h"
+	"../common/mensajes.h"
+	"../clientes/archivosClientes.h"
+	"../clientes/cliente.h"
+
+1656610287 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\articulos\articulos.c
+	<stdio.h>
+	<stdlib.h>
+	"articulos.h"
+	"../common/mensajes.h"
+
+1656555277 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\articulos\articulos.h
+	<stdio.h>
+	<string.h>
+
+1656545580 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\mensajes.h
+
+1656610287 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\fecha.c
+	"fecha.h"
+
+1656551584 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\fecha.h
+	<stdio.h>
+	<time.h>
+
+1656545580 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\leerteclado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leerTeclado.h"
+
+1656545580 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\leerteclado.h
+
+1656551584 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\mensajes.c
+	<stdio.h>
+	"mensajes.h"
+
+1656551584 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\archivosclientes.c
+	<stdlib.h>
+	<stdio.h>
+	"../common/mensajes.h"
+	"archivosClientes.h"
+
+1656551584 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\archivosclientes.h
+	"cliente.h"
+
+1656634508 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\cliente.h
+
+1656611893 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\commonclientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commonClientes.h"
+	"mensajes.h"
+	"leerTeclado.h"
+
+1656611121 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\common\commonclientes.h
+	"../clientes/cliente.h"
+
+1656551584 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\archivospedidos.c
+	<stdio.h>
+	<stdlib.h>
+	"../common/mensajes.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656610287 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\pedidos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../common/fecha.h"
+
+1656551584 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\archivospedidos.h
+	"pedidos.h"
+
+1656634925 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\pedidos\pedidos.c
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+	"../articulos/articulos.h"
+	"../clientes/cliente.h"
+	"../common/fecha.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656613052 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"files/auth/autenticacion.h"
+	"files/menu/menu.h"
+
+1656613175 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\menu\menu.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"../articulos/articulos.h"
+	"../pedidos/archivosPedidos.h"
+	"../pedidos/pedidos.h"
+	"../common/mensajes.h"
+	"../clientes/archivosClientes.h"
+	"../clientes/cliente.h"
+
+1656634692 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\menu\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1656634583 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\clientes\cliente.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/commonClientes.h"
+	"../common/leerTeclado.h"
+	"cliente.h"
+	"archivosClientes.h"
+
+1656616565 source:c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\auth\autenticacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autenticacion.h"
+
+1656616565 c:\users\mdelabarra\onedrive - endava\documents\facultad\lab-grupo-2-proyecto-final\src\tupedidoencguida\files\auth\autenticacion.h
+	"../clientes/cliente.h"
+	"../common/commonClientes.h"
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+
+1656615640 c:\users\mateo\github\proyecto\src\tupedidoencguida\files\auth\autenticacion.h
+	"../clientes/cliente.h"
+	"../common/commonClientes.h"
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+
+1656615452 source:c:\users\mateo\github\proyecto\src\tupedidoencguida\files\auth\autenticacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autenticacion.h"
+
+1656632629 source:c:\users\mateo\desktop\tupedidoencguida\files\articulos\articulos.c
+	<stdio.h>
+	<stdlib.h>
+	"articulos.h"
+	"../common/mensajes.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\articulos\articulos.h
+	<stdio.h>
+	<string.h>
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\common\mensajes.h
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\auth\autenticacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autenticacion.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\auth\autenticacion.h
+	"../clientes/cliente.h"
+	"../common/commonClientes.h"
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+
+1656635712 c:\users\mateo\desktop\tupedidoencguida\files\clientes\cliente.h
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\common\commonclientes.h
+	"../clientes/cliente.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\common\leerteclado.h
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\clientes\archivosclientes.c
+	<stdlib.h>
+	<stdio.h>
+	"../common/mensajes.h"
+	"archivosClientes.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\clientes\archivosclientes.h
+	"cliente.h"
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\common\commonclientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commonClientes.h"
+	"mensajes.h"
+	"leerTeclado.h"
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\common\fecha.c
+	"fecha.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\common\fecha.h
+	<stdio.h>
+	<time.h>
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\common\leerteclado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leerTeclado.h"
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\common\mensajes.c
+	<stdio.h>
+	"mensajes.h"
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\files\pedidos\archivospedidos.c
+	<stdio.h>
+	<stdlib.h>
+	"../common/mensajes.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\pedidos\pedidos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../common/fecha.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\pedidos\archivospedidos.h
+	"pedidos.h"
+
+1656617566 source:c:\users\mateo\desktop\tupedidoencguida\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"files/auth/autenticacion.h"
+	"files/menu/menu.h"
+
+1656617566 c:\users\mateo\desktop\tupedidoencguida\files\menu\menu.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"../articulos/articulos.h"
+	"../pedidos/archivosPedidos.h"
+	"../pedidos/pedidos.h"
+	"../common/mensajes.h"
+	"../clientes/archivosClientes.h"
+	"../clientes/cliente.h"
+
+1656635712 source:c:\users\mateo\desktop\tupedidoencguida\files\clientes\cliente.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/commonClientes.h"
+	"../common/leerTeclado.h"
+	"cliente.h"
+	"archivosClientes.h"
+
+1656635712 source:c:\users\mateo\desktop\tupedidoencguida\files\menu\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1656635712 source:c:\users\mateo\desktop\tupedidoencguida\files\pedidos\pedidos.c
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+	"../articulos/articulos.h"
+	"../clientes/cliente.h"
+	"../common/fecha.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
