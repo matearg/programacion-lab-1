@@ -472,3 +472,130 @@
 	"pedidos.h"
 	"archivosPedidos.h"
 
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\articulos\articulos.c
+	<stdio.h>
+	<stdlib.h>
+	"articulos.h"
+	"../common/mensajes.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\articulos\articulos.h
+	<stdio.h>
+	<string.h>
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\mensajes.h
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\auth\autenticacion.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"autenticacion.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\auth\autenticacion.h
+	"../clientes/cliente.h"
+	"../common/commonClientes.h"
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\clientes\cliente.h
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\commonclientes.h
+	"../clientes/cliente.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\leerteclado.h
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\clientes\archivosclientes.c
+	<stdlib.h>
+	<stdio.h>
+	"../common/mensajes.h"
+	"archivosClientes.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\clientes\archivosclientes.h
+	"cliente.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\clientes\cliente.c
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/commonClientes.h"
+	"../common/leerTeclado.h"
+	"cliente.h"
+	"archivosClientes.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\commonclientes.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"commonClientes.h"
+	"mensajes.h"
+	"leerTeclado.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\fecha.c
+	"fecha.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\fecha.h
+	<stdio.h>
+	<time.h>
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\leerteclado.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"leerTeclado.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\common\mensajes.c
+	<stdio.h>
+	"mensajes.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\menu\menu.c
+	<stdio.h>
+	<stdlib.h>
+	"menu.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\menu\menu.h
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"../articulos/articulos.h"
+	"../pedidos/archivosPedidos.h"
+	"../pedidos/pedidos.h"
+	"../common/mensajes.h"
+	"../clientes/archivosClientes.h"
+	"../clientes/cliente.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\pedidos\archivospedidos.h
+	"pedidos.h"
+
+1656636386 c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\pedidos\pedidos.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"../common/fecha.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\pedidos\archivospedidos.c
+	<stdio.h>
+	<stdlib.h>
+	"../common/mensajes.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\files\pedidos\pedidos.c
+	<stdlib.h>
+	<stdio.h>
+	<conio.h>
+	<string.h>
+	"../common/mensajes.h"
+	"../common/leerTeclado.h"
+	"../articulos/articulos.h"
+	"../clientes/cliente.h"
+	"../common/fecha.h"
+	"pedidos.h"
+	"archivosPedidos.h"
+
+1656636386 source:c:\users\mateo\github\programacion-lab-1\parciales\3-tpfinal\tupedidoencguida\main.c
+	<stdio.h>
+	<stdlib.h>
+	<locale.h>
+	"files/auth/autenticacion.h"
+	"files/menu/menu.h"
+
