@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 typedef struct {
     int legajo;
@@ -23,6 +22,7 @@ const char * ANADIR = "ab";
 stAlumno * obtenerAlumnos(char nombreArchivo[], int * cantAlumnos);
 void altaAlumno(arrAlumnos * arregloAlumnos, char nombreArchivo[]);
 int insertarAlumno(char nombreArchivo[], stAlumno alumno);
+int getAnio(int edadAlumno);
 void mostrarAlumnos(arrAlumnos arregloAlumnos[]);
 void menu(arrAlumnos * arregloAlumnos, char nombreArchivo[]);
 
@@ -106,8 +106,7 @@ void altaAlumno(arrAlumnos * arregloAlumnos, char nombreArchivo[])
     fflush(stdin);
     gets(aux.apellido);
 
-    srand(time(NULL));
-    aux.anio = rand()%6 + 1;
+    aux.anio = getAnio(aux.edad);
 
     insertado = insertarAlumno(nombreArchivo, aux);
 
@@ -202,4 +201,40 @@ void mostrarAlumnos(arrAlumnos * arregloAlumnos)
         printf(" %d", arregloAlumnos->alumno[i].anio);
         puts("\n");
     }
+}
+
+int getAnio(int edadAlumno)
+{
+    int anio;
+
+    if(edadAlumno == 13)
+    {
+        anio = 1;
+    }
+    else if(edadAlumno == 14)
+    {
+        anio = 2;
+    }
+    else if(edadAlumno == 15)
+    {
+        anio = 3;
+    }
+    else if(edadAlumno == 16)
+    {
+        anio = 4;
+    }
+    else if(edadAlumno == 17)
+    {
+        anio = 5;
+    }
+    else if (edadAlumno == 18)
+    {
+        anio = 6;
+    }
+    else
+    {
+        anio = 0;
+    }
+
+    return anio;
 }
