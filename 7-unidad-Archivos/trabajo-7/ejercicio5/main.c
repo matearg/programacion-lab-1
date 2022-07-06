@@ -25,6 +25,7 @@ int insertarAlumno(char nombreArchivo[], stAlumno alumno);
 int getAnio(int edadAlumno);
 void mostrarAlumnos(arrAlumnos arregloAlumnos[]);
 void menu(arrAlumnos * arregloAlumnos, char nombreArchivo[]);
+int cantidadRegistros(char nombreArchivo[]);
 
 int main()
 {
@@ -237,4 +238,19 @@ int getAnio(int edadAlumno)
     }
 
     return anio;
+}
+
+int cantidadRegistros(char nombreArchivo[])
+{
+    int i;
+
+    FILE * archivo; 
+    archivo = fopen(nombreArchivo, LECTURA);
+
+    if(archivo != NULL)
+    {
+
+    }
+
+    return i;
 }
