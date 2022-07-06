@@ -5,7 +5,8 @@
 
 typedef struct {
     int legajo;
-    char nombreYapellido[30];
+    char nombre[30];
+    char apellido[30];
     int edad;
     int anio;
 } stAlumno;
@@ -22,6 +23,7 @@ const char * ANADIR = "ab";
 stAlumno * obtenerAlumnos(char nombreArchivo[], int * cantAlumnos);
 void altaAlumno(arrAlumnos * arregloAlumnos, char nombreArchivo[]);
 int insertarAlumno(char nombreArchivo[], stAlumno alumno);
+void mostrarAlumnos(arrAlumnos arregloAlumnos[]);
 void menu(arrAlumnos * arregloAlumnos, char nombreArchivo[]);
 
 int main()
@@ -53,11 +55,14 @@ stAlumno * obtenerAlumnos(char nombreArchivo[], int * cantAlumnos)
         fseek(archivoAlumnos, 0, SEEK_SET);
         fread(&alumnoAux, sizeof(alumnoAux), 1, archivoAlumnos);
         i = 0;
+
         while(!feof(archivoAlumnos))
         {
             arregloAlumnos[i++] = alumnoAux;
             fread(&alumnoAux, sizeof(alumnoAux), 1, archivoAlumnos);
         }
+
+        fclose(archivoAlumnos);
     }
     else
     {
@@ -93,10 +98,15 @@ void altaAlumno(arrAlumnos * arregloAlumnos, char nombreArchivo[])
     printf("\nIngrese la edad del alumno: ");
     scanf("%d", &aux.edad);
 
-    printf("\nIngrese el nombre y apellido del alumno: ");
+    printf("\nIngrese el nombre del alumno: ");
     fflush(stdin);
-    gets(aux.nombreYapellido);
+    gets(aux.nombre);
 
+    printf("\nIngrese el apellido del alumno: ");
+    fflush(stdin);
+    gets(aux.apellido);
+
+    srand(time(NULL));
     aux.anio = rand()%6 + 1;
 
     insertado = insertarAlumno(nombreArchivo, aux);
@@ -110,6 +120,8 @@ void altaAlumno(arrAlumnos * arregloAlumnos, char nombreArchivo[])
     {
         printf("\nOcurrio un error al insertar el alumno\n\n");
     }
+
+    puts("\n");
 }
 
 int insertarAlumno(char nombreArchivo[], stAlumno alumno)
@@ -136,16 +148,19 @@ void menu(arrAlumnos * arregloAlumnos, char nombreArchivo[])
 {
     char opcion;
 
-    printf("MENU\n\n");
-    printf(
-            "\n[C]argar Alumno"
-            "\n[M]ostar Alumnos"
-            "\n\n[S]alir"
-            );
-    scanf("%c", &opcion);
-
     do
     {
+        system("cls");
+        printf("MENU\n");
+        printf(
+                "\n[C]argar Alumno"
+                "\n[M]ostar Alumnos"
+                "\n\n[S]alir\n"
+                );
+        printf("\nElija una opcion -> ");
+        fflush(stdin);
+        opcion = getchar();
+
         switch (opcion)
         {
             case 'C':
@@ -154,7 +169,7 @@ void menu(arrAlumnos * arregloAlumnos, char nombreArchivo[])
                 break;
 
             case 'M':
-                /* mostrarAlumnos(arregloAlumnos, nombreArchivo); */
+                mostrarAlumnos(arregloAlumnos);
                 system("pause");
                 break;
 
@@ -165,7 +180,26 @@ void menu(arrAlumnos * arregloAlumnos, char nombreArchivo[])
 
             default:
                 printf("\nOpcion incorrecta\n");
+                system("pause");
                 break;
         }
     } while (opcion != 'S');
+}
+
+void mostrarAlumnos(arrAlumnos * arregloAlumnos)
+{
+    int i = 0;
+
+    system("cls");
+    printf("LISTADO\n\n");
+
+    for(i = 0; i < arregloAlumnos->cantAlumnos; i++)
+    {
+        printf("%d ", arregloAlumnos->alumno[i].legajo);
+        printf(" %s ", arregloAlumnos->alumno[i].nombre);
+        printf("%s ", arregloAlumnos->alumno[i].apellido);
+        printf(" %d ", arregloAlumnos->alumno[i].edad);
+        printf(" %d", arregloAlumnos->alumno[i].anio);
+        puts("\n");
+    }
 }
