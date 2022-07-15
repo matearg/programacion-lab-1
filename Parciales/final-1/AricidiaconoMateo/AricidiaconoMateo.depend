@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1655694921 source:c:\users\mateo\desktop\aricidiaconomateo\pila.c
+	"pila.h"
+
+1655694921 c:\users\mateo\desktop\aricidiaconomateo\pila.h
+	<stdio.h>
+	<malloc.h>
+
+1657839523 source:c:\users\mateo\desktop\aricidiaconomateo\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"pila.h"
+
