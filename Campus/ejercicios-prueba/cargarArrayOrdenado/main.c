@@ -2,64 +2,71 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define CANT_E 20
+int cargarArreglo(int *a);
+void ordenarArreglo(int *a, int val);
+void mostrarArreglo(int *a, int val);
 
-int cargarArregloOrdenado(int a[]);
-void mostrarArreglo(int a[], int validos);
+int main() {
+  int *arreglo = (int *)malloc(sizeof(int) * 10);
+  int validos = 0;
 
-int main()
-{
-    int arreglo[CANT_E], validos = 0;
+  validos = cargarArreglo(arreglo);
 
-    validos = cargarArregloOrdenado(arreglo);
+  system("cls");
 
-    system("cls");
+  printf("\nArreglo luego de carga:\n");
+  mostrarArreglo(arreglo, validos);
 
-    printf("\nArreglo luego de carga:\n");
-    mostrarArreglo(arreglo, validos);
+  printf("\nArreglo luego de ordenar:\n");
+  ordenarArreglo(arreglo, validos);
+  mostrarArreglo(arreglo, validos);
 
-    printf("\n\n");
+  printf("\n\n");
 
-    system("PAUSE");
-    system("cls");
+  system("PAUSE");
+  system("cls");
 
-    return 0;
+  return 0;
 }
 
-int cargarArregloOrdenado(int a[])
-{
-    srand(time(NULL));
+void ordenarArreglo(int *a, int val) {
+  int i = 0, j = 0, min = 0;
 
-    int i = 0, j = 0, menor = 0, validos = 0, cantElementos = 0;
+  for (i = 1; i < val; i++) {
+    min = a[i];
+    j = i;
 
-    printf("Cuantos elementos desea agregar ");
-    scanf("%d", &cantElementos);
-
-    for(validos = 0; validos < cantElementos; validos++)
-    {
-        a[validos] = rand()%11;
+    while (j > 0 && a[j - 1] > min) {
+      a[j] = a[j - 1];
+      j--;
     }
-
-    for(i=1;i < validos; i++)
-    {
-        menor = a[i];
-        j = i;
-
-        while(j > 0 && a[j - 1] > menor)
-        {
-            a[j] = a[j - 1];
-            j--;
-        }
-        a[j] = menor;
-    }
+    a[j] = min;
+  }
 }
 
-void mostrarArreglo(int a[], int validos)
-{
-    int i = 0;
+int cargarArreglo(int *a) {
+  srand(time(NULL));
 
-    for(i=0; i<validos; i++)
-    {
-        printf("| %d ", a[i]);
-    }
+  int validos = 0, cantElementos = 0;
+
+  printf("Cuantos elementos desea agregar ");
+  scanf_s("%d", &cantElementos);
+
+  if (cantElementos > 10) {
+    a = (int *)realloc(a, sizeof(int) * cantElementos);
+  }
+
+  for (validos = 0; validos < cantElementos; ++validos) {
+    a[validos] = rand() % 1001;
+  }
+  return validos;
+}
+
+void mostrarArreglo(int *a, int val) {
+  int i = 0;
+
+  for (i = 0; i < val; ++i) {
+    printf("| %d ", a[i]);
+  }
+  printf("|\n");
 }
